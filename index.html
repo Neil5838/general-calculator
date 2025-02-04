@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/index.scss">
+    <title>Calculator 2.0</title>
+  </head>
+  <body>
+    <div class="calculator-container">
+      <div class="display-container">
+        <input type="text" readonly id="display">
+      </div>
+      <div id="keys">
+        <!-- row1 -->
+        <button class="key special-key">AC</button>
+        <button class="key special-key">DE</button>
+        <button class="key">0</button>
+        <button class="key special-key text-bigger">/</button>
+        <!-- row2 -->
+        <button class="key">9</button>
+        <button class="key">8</button>
+        <button class="key">7</button>
+        <button class="key special-key multiply-key">X</button>
+        <!-- row3 -->
+        <button class="key">6</button>
+        <button class="key">5</button>
+        <button class="key">4</button>
+        <button class="key special-key text-bigger">+</button>
+        <!-- row4 -->
+        <button class="key">3</button>
+        <button class="key">2</button>
+        <button class="key">1</button>
+        <button class="key special-key text-bigger">-</button>
+        <!-- row1 -->
+        <button class="key">00</button>
+        <button class="key text-bigger decimal-key"><span>.</span></button>
+        <button class="key special-key text-bigger result">=</button>
+      </div>
+    </div>
+
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
