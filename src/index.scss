@@ -12,15 +12,15 @@ body {
   background-color: $secondary;
   
   display: flex;
-  align-items: center;
   justify-content: center;
-  height: 100vh;
+  
 }
 
 .calculator-container {
     background-color: $primary;
     box-shadow: 1px 2px 8px #b4b4b471;
     border-radius: 20px;
+    margin-top: 25px;
 }
 
 .display-container {
@@ -99,24 +99,5 @@ body {
     }
 }
 
-@media (max-width: 374px) {
-    body {
-        display: block;
-    }
-
-    .calculator-container {
-        border-radius: 0;
-    }
-
-    #display {
-        border-radius: 0;
-        padding: 35px 15px;
-    }
-
-    #keys {
-        gap: 8px;
-        padding: 15px;
-    }
-}
 
 
