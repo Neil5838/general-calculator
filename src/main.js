@@ -18,7 +18,7 @@ Array.from(keys).forEach(key => {
 
         if(keyValue === '=') {
             try {
-                display.value = display.value.replaceAll(/X/g, '*');
+                display.value = display.value.replace(/x/g, '*');
                 display.value = eval(display.value);
             } catch (error) {
                 display.value = 'Invalid input';
@@ -29,6 +29,12 @@ Array.from(keys).forEach(key => {
         if(/[+-\/X.]/.test(keyValue) && /[+-\/X.]$/.test(display.value)) {
             return
         }
+
+        const lastNumber = display.value.split(/[\+\-X\/]/).pop();
+        if(keyValue === '.' && lastNumber.includes('.')) {
+            return;
+        }
+        
 
        if(display.value === '0' && /\d/.test(keyValue)) {
         display.value = keyValue;
